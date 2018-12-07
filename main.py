@@ -2,7 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import dill as pickle
 import sklearn
-import geonames
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC 
 #SVC is for Support Vector Classifier -- we called it SVM in class
@@ -40,9 +39,5 @@ if __name__ == "__main__":
     
     
     
-    
-    geonames_client = geonames.GeonamesClient('demo')
-    geonames_result = geonames_client.find_timezone({'lat': 48.871236, 'lng': 2.77928})
-    print geonames_result['timezoneId']
- 
+
     
